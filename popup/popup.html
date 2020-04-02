@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odoo Buddy</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h3 class="navbar-brand">Odoo Buddy</h3>
+    </header>
+    <div class="container">
+      <h5 class="py-2">Debugging mode</h5>
+      <div>
+        <div class="form-check">
+          <input id="debug-off" type="checkbox" class="form-check-input" name="tests" />
+          <label for="debug-off" class="form-check-radio">Off</label>
+        </div>
+        <div class="form-check">
+          <input id="debug-on" type="radio" class="form-check-input" name="assets" value="false" />
+          <label for="debug-on" class="form-check-radio">On</label>
+        </div>
+        <div class="form-check">
+          <input id="debug-assets" type="radio" class="form-check-input" name="assets" value="true" />
+          <label for="debug-assets" class="form-check-radio">Assets</label>
+        </div>
+        <div class="form-check">
+          <input id="debug-tests" type="checkbox" class="form-check-input" name="tests" />
+          <label for="debug-tests" class="form-check-radio">Tests</label>
+        </div>
+      </div>
+    </div>
+    <script src="./popup.js"></script>
+  </body>
+</html>

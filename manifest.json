@@ -1,0 +1,22 @@
+{
+  "name": "Odoo Buddy",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Small tool to use Odoo more efficiently",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["start.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": ["*://*/*"],
+      "resources": ["scripts/main.js", "scripts/main.css"]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+html, body {
+  min-width: 400px;
+}
+
+.navbar {
+  background-color: #714b67;
+  color: #fdfdfd;
+}

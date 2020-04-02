@@ -1,0 +1,9 @@
+.ob-button-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 0.3rem;
+}
+
+.ob-button-container .dropdown-toggle-split {
+  flex: 0;
+}
