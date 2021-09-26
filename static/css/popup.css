@@ -1,0 +1,281 @@
+.text-primary {
+  color: #00A09D !important;
+}
+
+a.text-primary:hover {
+  color: #007a77 !important;
+}
+
+.bg-primary {
+  background-color: #00A09D !important;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #00A09D !important;
+  border-color: #007a77 !important;
+  color: white !important;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 160, 157, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 160, 157, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: #007a77 !important;
+}
+
+a.text-secondary:hover {
+  color: #68465f !important;
+}
+
+.text-secondary {
+  color: #875A7B !important;
+}
+
+.bg-secondary {
+  background-color: #875A7B !important;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #875A7B !important;
+  border-color: #68465f !important;
+  color: white !important;
+}
+
+.btn-secondary:active, .btn-secondary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(135, 90, 123, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(135, 90, 123, 0.25);
+}
+
+.btn-secondary:hover {
+  background-color: #68465f !important;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #00A09D;
+  background-color: #00A09D;
+}
+
+.custom-checkbox .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  color: white;
+  background-color: rgba(0, 160, 157, 0.25);
+  border-color: rgba(0, 160, 157, 0.25);
+}
+
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 160, 157, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 160, 157, 0.25);
+}
+
+.custom-checkbox label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html, body {
+  width: 800px;
+  background-color: #f9f9f9;
+}
+
+a {
+  color: #00A09D;
+}
+
+a:hover {
+  color: #007a77;
+}
+
+::-moz-selection {
+  color: white;
+  background: #00A09D;
+}
+
+::selection {
+  color: white;
+  background: #00A09D;
+}
+
+.list-items {
+  margin: 0;
+  max-height: 280px;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.pull-request:not(:last-child) {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.pull-request .pr-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5rem .75rem;
+}
+
+.pull-request .pr-header .pr-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pull-request .pr-info {
+  background-color: #eff7ff;
+}
+
+.pull-request .pr-body {
+  background-color: rgba(0, 0, 0, 0.03);
+  cursor: default;
+  font-size: 14px;
+  margin: .5rem .75rem;
+  padding: .5rem .75rem;
+}
+
+.branch {
+  background-color: #eff7ff;
+  border-radius: .25rem;
+  color: #0366d6;
+  font-family: monospace;
+  font-size: 75%;
+  padding: .25em .4em;
+}
+
+.nav-item {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.foldable-badges {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.foldable-badges .foldable-badge {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  margin-left: 5px;
+  overflow: hidden;
+  -webkit-transition: .25s;
+  transition: .25s;
+  width: 1rem;
+}
+
+.foldable-badges .foldable-badge .foldable-badge-text {
+  font-size: .75rem;
+  opacity: 0;
+  padding: 3px 5px;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.foldable-badges .foldable-badge:hover {
+  border-radius: 1rem;
+  height: initial;
+  width: initial;
+}
+
+.foldable-badges .foldable-badge:hover .foldable-badge-text {
+  opacity: 1;
+}
+
+.badges .badge {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.badges .badge .fab, .badges .badge .far, .badges .badge .fas {
+  margin-left: .25rem;
+}
+
+.badges .badge:not(:last-child) {
+  margin-right: 5px;
+}
+
+.fa-heart {
+  cursor: pointer;
+  -webkit-transition: color .15s;
+  transition: color .15s;
+}
+
+.fa-heart.fas, .fa-heart:hover {
+  color: #ff0050;
+}
+
+.nav-tabs .nav-tabs {
+  border-bottom: none;
+}
+
+.content {
+  border-top: none;
+  margin-bottom: 1rem;
+}
+
+.help {
+  cursor: help;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.spin {
+  -webkit-animation: spin .5s infinite;
+          animation: spin .5s infinite;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  overflow: hidden;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.fade-enter-to,
+.fade-leave {
+  opacity: 1;
+}
+/*# sourceMappingURL=popup.css.map */
