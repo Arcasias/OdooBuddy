@@ -1,0 +1,23 @@
+{
+  "name": "odoobuddy",
+  "version": "1.0.0",
+  "description": "A cool buddy to assist you in using Odoo",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arcasias/OdooBuddy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arcasias/OdooBuddy/issues"
+  },
+  "homepage": "https://github.com/Arcasias/OdooBuddy#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  }
+}

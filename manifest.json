@@ -10,12 +10,22 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["start.js"]
+      "include_globs": [
+        "*://localhost:*/*",
+        "*://*.*.*.*:*/*",
+        "*://*.odoo.com/*"
+      ],
+      "js": ["content_script.js"]
     }
   ],
   "web_accessible_resources": [
     {
       "matches": ["*://*/*"],
+      "include_globs": [
+        "*://localhost:*/*",
+        "*://*.*.*.*:*/*",
+        "*://*.odoo.com/*"
+      ],
       "resources": ["scripts/main.js", "scripts/main.css"]
     }
   ]

@@ -1,0 +1,9 @@
+$primary: #017e84;
+$secondary: #714b67;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.field {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
