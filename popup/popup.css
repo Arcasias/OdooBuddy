@@ -11113,6 +11113,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  min-width: 15rem;
+}
+
 .field {
   display: grid;
   grid-template-columns: 1fr 2fr;

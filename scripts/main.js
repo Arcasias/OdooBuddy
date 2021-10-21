@@ -80,10 +80,16 @@
       if (!storage.user) {
         setStorage("user", "admin");
       }
-      const switchUser = async (user) => {
-        await setStorage("user", user);
-        loginInput.value = pwdInput.value = user;
-        btnContainer.closest("form").submit();
+      const handleSubmit = (user) => {
+        return async () => {
+          if (user && user !== storage.user) {
+            await setStorage("user", user);
+          }
+          if (user) {
+            loginInput.value = pwdInput.value = user;
+          }
+          btnContainer.closest("form").submit();
+        };
       };
       on(
         "click",
@@ -95,13 +101,13 @@
         true
       );
       return /* xml */ `
-        <button type="submit" class="btn btn-primary">
+        <button class="btn btn-primary" ${on("click", handleSubmit())}>
           Log in
         </button>
         <div class="btn-group">
-          <button type="submit" class="btn btn-primary" ${on(
+          <button class="btn btn-primary" ${on(
             "click",
-            () => (loginInput.value = pwdInput.value = storage.user)
+            handleSubmit(storage.user)
           )}>
             Log in as ${storage.user}
           </button>
@@ -113,15 +119,15 @@
             state.open
               ? /* xml */ `
           <ul class="dropdown-menu show">
-            <li><a class="dropdown-item" href="#" ${on("click", () =>
-              switchUser("admin", true)
-            )}>Admin</a></li>
-            <li><a class="dropdown-item" href="#" ${on("click", () =>
-              switchUser("demo", true)
-            )}>Demo</a></li>
-            <li><a class="dropdown-item" href="#" ${on("click", () =>
-              switchUser("portal", true)
-            )}>Portal</a></li>
+            <li class="dropdown-item" ${on("click", handleSubmit("admin"))}>
+              <span>Admin</span>
+            </li>
+            <li class="dropdown-item" ${on("click", handleSubmit("demo"))}>
+              <span>Demo</span>
+            </li>
+            <li class="dropdown-item" ${on("click", handleSubmit("portal"))}>
+              <span>Portal</span>
+            </li>
           </ul>
           `
               : ""

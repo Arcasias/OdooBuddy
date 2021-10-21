@@ -28,5 +28,10 @@
       ],
       "resources": ["scripts/main.js", "scripts/main.css"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  }
 }

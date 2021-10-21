@@ -4,7 +4,8 @@
   "description": "A cool buddy to assist you in using Odoo",
   "main": "start.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass --watch --no-source-map ./popup/popup.scss ./popup/popup.css"
   },
   "repository": {
     "type": "git",
